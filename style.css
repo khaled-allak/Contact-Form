@@ -1,0 +1,89 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    padding:0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0D6EFD;
+}
+.wrapper {
+    background:#fff;
+    border-radius: 5px;
+    width: 720px;
+}
+.wrapper header {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.wrapper form {
+    margin: 35px 30px;
+}
+
+
+.button-area span{
+    color: #0D6EFD;
+    margin-left: 30px;
+    display: none;
+}
+@media(max-width:767px){
+    .wrapper header{
+        text-align: center;
+    }
+    form .db1-field {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    form .db1-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .button-area {
+        flex-direction: column;
+    }
+    .button-area button{
+        width: 100%;
+    }
+    .button-area span{
+        text-align: center;
+        margin: 20px 0;
+    }
+    form .message textarea{
+        resize: none;
+    }
+}
+@media(max-width: 600px){
+    .wrapper header{
+        text-align: center;
+}
+    form .dbl-field{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .dbl-field .filed{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+       form .message textarea{
+        resize: none;
+    }
+    form .button-area{
+        flex-direction: column;
+    }
+    .button-area button{
+        width: 100%
+    }
+    .button-area span{
+        text-align center;
+        margin: 20pc 0;
+    }
