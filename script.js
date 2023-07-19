@@ -15,7 +15,9 @@ form.onsubmit = (e) => {
                 statusTxt.style.color = 'red';
             } else {
                 form.reset();
-
+                setTimeout(() => {
+                    statusTxt.style.display = 'none';
+                }, 3000);
             }
             statusTxt.innerText = response;
         }
